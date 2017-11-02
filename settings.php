@@ -5,7 +5,12 @@
 
 <body>
 
-***settings ***
-
+<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+<body id ="mainBackground">
+  
+<div>
+  
+  </div>
+  
 </body>
 </html>
