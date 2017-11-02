@@ -12,7 +12,9 @@
 	testing test one two three
   </div>
 
-<a class="gear" href="google.ca"> click me! </a>
+<br>
+
+<a href="www.google.ca" class="gear" > click me! </a>
   
 </body>
 </html>
