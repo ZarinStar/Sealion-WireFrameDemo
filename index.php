@@ -9,7 +9,7 @@
 
 <body>
 <!-- Horizontal bar-->
-<?php include 'Sealion-WireFrameDemo/header.php'; ?>
+<?php include("./header.php"); ?>
 
 <p> home page (test) </p>
 
