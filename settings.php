@@ -8,9 +8,11 @@
 <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 <body id ="mainBackground">
   
-<div>
-  
+<div id = "mainDiv">
+	testing test one two three
   </div>
+
+<a class="gear" href="google.ca"> click me! </a>
   
 </body>
 </html>

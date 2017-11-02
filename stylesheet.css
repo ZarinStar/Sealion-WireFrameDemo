@@ -3,4 +3,13 @@
     background-color: rgb(44,88,104);
 }
 
+#mainDiv {
+	background-color: white;
+}
+
+
+a.gear {
+	background-color: gray;
+}
+
 /* http://www.w3schools.com/tags/ref_colorpicker.asp */
