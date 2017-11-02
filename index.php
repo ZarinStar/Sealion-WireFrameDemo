@@ -10,6 +10,9 @@
 <body>
 <!-- Horizontal bar-->
 <?php include("./header.php"); ?>
+  
+<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+<body id ="mainBackground">
 
 <p> home page (test) </p>
 
