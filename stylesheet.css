@@ -1,6 +1,17 @@
+/******************
+COLOUR REFERENCES:
+
+> Teal (44,88,104) as decided by pod 1 for main background 
+
+FROM LOGO:
+
+> Blue (0,129,196)
+> Green (117,185,168)
+*****************/
+
 
 #mainBackground {
-    background-color: rgb(44,88,104);
+    background-color: rgb(44,88,104); /*teal colour of CLC logo*/
 }
 
 #mainDiv {
@@ -36,15 +47,23 @@ div.buttonLink {
     background-color: green;
 }
 
+/**For Contact Us page*/
 div.contactUs {
     height: 100px;
     width: 30%;
-    background-color: white;
+    /*background-color: rgb(0,129,196);*/
+    color: white;
     text-align: center;
 }
 span.contactUs {
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
+}
+div.contactUsButton {
+    height: 55px;
+    width: 10%;
+    background-color: rgb(117,185,168);
+    text-align: center;
 }
 /* http://www.w3schools.com/tags/ref_colorpicker.asp */
