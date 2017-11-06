@@ -8,7 +8,10 @@ FROM LOGO:
 > Blue (0,129,196)
 > Green (117,185,168)
 *****************/
-
+html, body {
+  margin:0;
+  padding:0;
+}
 
 #mainBackground {
     /*background-color: rgb(44,88,104);*/ /*teal colour of CLC logo*/
@@ -48,6 +51,20 @@ div.buttonLink {
     background-color: green;
 }
 
+div.header {
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    /*margin-left: 10px;*/
+}
+
+div.footer {
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    /*margin-left: 10px;*/
+}
+
 /**For Contact Us page*/
 div.contactUs {
     height: 100px;
@@ -69,6 +86,7 @@ div.contactUsButton {
 }
 h1.contactUs {
   color: white;
+  margin-left: 15px;
 }
 a.contactUsButton{
   color: white;

@@ -8,6 +8,33 @@
 <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 <body id ="mainBackground">
 
+<!--beginning of header-->
+<!--For the clock in the header-->
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    //var s = today.getSeconds();
+    m = checkTime(m);
+    //s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m; //+ ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+
+<body onload="startTime()">
+
+<div class = "header"> <br> <h1 style="text-align:left; margin-left: 15px;"> Medicatify <span style="float:right; margin-right: 15px;" <div id="txt"> </div> </span> </h1> </div>
+
+<!--end of header-->
+
+
 <br>
 <h1 class ="contactUs"> Contact Us </h1>
 <br>
@@ -39,6 +66,12 @@
 <center> <div class = "contactUsButton"> <span class ="contactUs"> <br> <a style="text-decoration: none" class="contactUsButton" href=""> Submit </a> </span> </div> </center>
   
 <br>
+
+<!--footer-->
+<div class = "header"> <br> test </div>
+
+<!--end of footer-->
+
 
 </body>
 </html>
