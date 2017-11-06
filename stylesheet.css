@@ -11,7 +11,8 @@ FROM LOGO:
 
 
 #mainBackground {
-    background-color: rgb(44,88,104); /*teal colour of CLC logo*/
+    /*background-color: rgb(44,88,104);*/ /*teal colour of CLC logo*/
+    background-color: rgb(117,185,168);
 }
 
 #mainDiv {
@@ -63,7 +64,13 @@ span.contactUs {
 div.contactUsButton {
     height: 55px;
     width: 10%;
-    background-color: rgb(117,185,168);
+    background-color: rgb(44,88,104);
     text-align: center;
+}
+h1.contactUs {
+  color: white;
+}
+a.contactUsButton{
+  color: white;
 }
 /* http://www.w3schools.com/tags/ref_colorpicker.asp */

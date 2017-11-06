@@ -9,7 +9,7 @@
 <body id ="mainBackground">
 
 <br>
-<h1> Contact Us </h1>
+<h1 class ="contactUs"> Contact Us </h1>
 <br>
 <br>
 
@@ -18,20 +18,25 @@
 <br>
 
 <center>
-<form action="/action_page.php">
+<form action="/action_page.php" id="contactForm">
   Email: <input type="text" name="email"><br>
   <!--Last name: <input type="text" name="lname"><br>
   <input type="submit" value="Submit">-->
 </form>
 <br>
 
- <textarea rows="10" cols="92" name="explanation" id="explanation">
- 
-</textarea> </center>
+<!--<form action="/action_page.php" id="usrform">
+  Name: <input type="text" name="usrname">
+  <input type="submit">
+</form>
+
+<textarea name="comment" form="usrform">Enter text here...</textarea>-->
+<p> Tell us how we can improve: </p>
+ <textarea rows="10" cols="92" name="explanation" id="explanation" form="contactForm"> </textarea> </center>
 
 <br>
 
-<center> <div class = "contactUsButton"> <span class ="contactUs"> <br> <a href="www.google.ca"> Submit </a> </span> </div> </center>
+<center> <div class = "contactUsButton"> <span class ="contactUs"> <br> <a style="text-decoration: none" class="contactUsButton" href=""> Submit </a> </span> </div> </center>
   
 <br>
 
