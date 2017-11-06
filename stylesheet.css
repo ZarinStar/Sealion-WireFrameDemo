@@ -55,14 +55,36 @@ div.header {
     height: 10%;
     width: 100%;
     background-color: white;
+    font-family: "Verdana";
     /*margin-left: 10px;*/
 }
 
-div.footer {
-    height: 10%;
-    width: 100%;
-    background-color: white;
-    /*margin-left: 10px;*/
+#footer {
+  height: 10%;
+  width: 100%;
+  background-color: white;
+  /*margin-left: 10px;*/
+  position:absolute;
+  bottom:0;
+}
+/*#footer > a {
+  text-decoration: none;
+  color: rgb(0,129,196);
+}*/
+#column{
+  text-align: center;
+  float: left;
+  width: 50%;
+}
+#column > a {
+  text-decoration: none;
+  color: rgb(0,129,196);
+  font-family: "Verdana";
+}
+#footer:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /**For Contact Us page*/
