@@ -199,7 +199,6 @@ img {
     -webkit-transition: .2s;
     transition: opacity .2s;
 }
-
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -209,8 +208,47 @@ img {
     background: white;
     cursor: pointer;
 }
-
 .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+
+#sectionDiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 150px;
+    height: 150px;
+}​
+
+/*For the toggle switch*/
+.sliderToggle {
+    -webkit-appearance: none;
+    width: 40%;
+    height: 15px;
+    border-radius: 5px;   
+    background: rgb(0,129,196);
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.sliderToggle::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: white;
+    cursor: pointer;
+}
+
+.sliderToggle::-moz-range-thumb {
     width: 25px;
     height: 25px;
     border-radius: 50%;

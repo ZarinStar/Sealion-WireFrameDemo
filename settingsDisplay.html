@@ -63,19 +63,20 @@ function checkTime(i) {
 <br>
 <center>
   <div id="slidecontainer">
-    <p style="color: black;"> Notifications: Volume at <span id="rangeOne"> 50</span>%</p>
+    <p class="main" style="color: black;"> Screen Brightness: Volume at <span id="rangeOne"> 50</span>%</p>
     <input type="range" min="0" max="100" value="50" class="slider" id="rangeOne" onchange="showValueOne(this.value)">
   </div>
 </center>
+
 <br>
 <br>
-<center>
-  <div id="slidecontainer">
-      <p style="color: black;"> System: Volume at <span id="rangeTwo"> 50</span>%</p>
-    <input type="range" min="0" max="100" value="50" class="slider" id="rangeTwo" onchange="showValueTwo(this.value)">
-    
-  </div>
-</center>
+<div id="sectionDiv"> <p class="main" style="color: black;"> Font Size:</p>
+    <form action="">
+    <input type="radio" name="gender" value="large"> <span style="font-size: 32px; color: black;"> Large </span> <br>
+    <input type="radio" name="gender" value="medium"> <span style="font-size: 26px; color: black;"> Medium </span><br>
+    <input type="radio" name="gender" value="small" checked> <span style="font-size: 20px; color: black;"> Small </span>
+    </form>
+</div>
 
 <!--<input type="range" min="0" max="50" value="0" step="5" onchange="showValue(this.value)" />
 <span id="range">0</span>-->
@@ -84,11 +85,39 @@ function showValueOne(newValue)
 {
   document.getElementById("rangeOne").innerHTML=newValue;
 }
-function showValueTwo(newValue)
+</script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<center>
+  <div id="slidecontainer">
+    <p class="main" style="color: black;"> Contrast: <span id="toggle"> Off</span></p>
+    <input type="range" min="1" max="2" value="1" class="sliderToggle" id="toggle" onchange="showToggle(this.value)">
+  </div>
+</center>
+
+<script type="text/javascript">
+function showToggle(newValue)
 {
-  document.getElementById("rangeTwo").innerHTML=newValue;
+  if (document.getElementById("toggle").innerHTML == "On") 
+  {
+    document.getElementById("toggle").innerHTML="Off";
+  } else
+  {
+    document.getElementById("toggle").innerHTML="On";
+  }
 }
 </script>
+
 
 <!--footer-->
 <div id="footer">
