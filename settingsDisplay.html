@@ -20,11 +20,21 @@ function startTime() {
     //s = checkTime(s);
     if (0 <= h && h <= 11) /*12am to 11:59am*/
     {
-    	document.getElementById('txt').innerHTML = h + ":" + m + " am"; //+ ":" + s;
+      if (h == 0)
+      {
+        h = 12;
+      }
+      document.getElementById('txt').innerHTML = h + ":" + m + " am"; //+ ":" + s;
     }
     else { /*12pm to 11:59pm*/
-    	h = h - 12;
-    	document.getElementById('txt').innerHTML = h + ":" + m + " pm"; //+ ":" + s;
+      if (h == 12)
+      {
+        h = 12;
+      }
+      else{
+        h = h - 12;
+      }
+      document.getElementById('txt').innerHTML = h + ":" + m + " pm"; //+ ":" + s;
     }
 
     /*document.getElementById('txt').innerHTML = h + ":" + m; //+ ":" + s;*/
