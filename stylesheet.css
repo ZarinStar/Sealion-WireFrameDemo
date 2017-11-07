@@ -152,9 +152,9 @@ h3 {
 	letter-spacing: 2px; 
 }
 
-h1, h3, h4, h5 {
+/*h1, h3, h4, h5 {
 	color: #4d4d4d;
-}
+}*/
 
 body {
 	/*background-image: url("mountains.jpg");*/
@@ -163,30 +163,32 @@ body {
   margin: 10px 40px 10px 40px;
   font-family: "Helvetica"; 
   font-weight: lighter;
-  color: #666666; 
+ /* color: #666666;*/ 
 }
 
 input {
 	font-weight: lighter;
 	letter-spacing: 0.5px; 
 	font-size: 14px;
+  border-radius: 5px;
 }
 
 p {
 	letter-spacing: 0.5px;
 }
 
-img {
+.logo {
     display: block;
     margin: auto;
-    width: 40%;
+    width: 30%;
 }
 
 .center {
     margin: auto;
-    width: 50%;
-    border: 1px solid #0F58E8;
+    width: 80%;
+    border: 1px solid #18C29C;
     padding: 10px;
+    background-color: #18C29C;
 }
 
 /*For the settings*/
