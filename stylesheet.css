@@ -8,7 +8,7 @@ FROM LOGO:
 > Blue (0,129,196)
 > Green (117,185,168)
 *****************/
-html, body {
+html {
   margin:0;
   padding:0;
 }
@@ -52,13 +52,17 @@ div.buttonLink {
 }
 
 div.header {
-    height: 10%;
+    height: 15%;
     width: 100%;
     background-color: white;
     font-family: "Verdana";
-    /*margin-left: 10px;*/
+    margin-left: -40px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    top:0;
+    position: absolute;
 }
-#header {
+/*#header {
   width:100%;
 }
 #left {
@@ -69,13 +73,13 @@ div.header {
 }
 #right{
   float:right;
-}
+}*/
 
 #footer {
   height: 10%;
   width: 100%;
   background-color: white;
-  /*margin-left: 10px;*/
+  margin-left: -40px;
   position:absolute;
   bottom:0;
 }
@@ -91,7 +95,7 @@ div.header {
 #column > a {
   text-decoration: none;
   color: rgb(0,129,196);
-  font-family: "Verdana";
+  font-family: "Helvetica";
 }
 #footer:after {
   content: "";
@@ -147,10 +151,10 @@ body {
 	/*background-image: url("mountains.jpg");*/
 	background-size: 110%;
 	background-repeat: no-repeat;
-    margin: 10px 40px 10px 40px;
-    font-family: "Helvetica"; 
-    font-weight: lighter;
-    color: #666666; 
+  margin: 10px 40px 10px 40px;
+  font-family: "Helvetica"; 
+  font-weight: lighter;
+  color: #666666; 
 }
 
 input {
@@ -174,4 +178,34 @@ img {
     width: 50%;
     border: 1px solid #0F58E8;
     padding: 10px;
+}
+
+/*For the settings*/
+.slider {
+    -webkit-appearance: none;
+    width: 45%;
+    height: 15px;
+    border-radius: 5px;   
+    background: rgb(0,129,196);
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: white;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
 }

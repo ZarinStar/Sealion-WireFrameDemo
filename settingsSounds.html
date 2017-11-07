@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
 
-<HEAD> <title> Contact Us </title></HEAD>
+<HEAD> <title> Settings - Sounds </title> </HEAD>
 
 <body>
 
 <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 <body id ="mainBackground">
-
-
-<div id="wrapper">
-
+  
 <!--beginning of header-->
 <!--For the clock in the header-->
 <script>
@@ -51,58 +48,48 @@ function checkTime(i) {
 
 <!--end of header-->
 
-<div id="content">
-<br>
-<h1 class ="contactUs"> Contact Us </h1>
 <br>
 <br>
+<br>
+<br>
+<br>
+<h1 class ="contactUs"> Settings - Sounds</h1>
 
 <center> 
-	<div class="contactUs"> 
-		<span class ="contactUs"> 
-			<p class="main"> Do you have suggestions for future updates? <br> Please submit you feedback here. </p> 
-		</span> 
+	<div class = "buttonLink"> <a href="settings.html"> Go back </a> 
 	</div> 
 </center>
-<br>
-<br>
 
+<br>
+<br>
 <center>
-	<form action="/action_page.php" id="contactForm">
-		Email: <input type="text" name="email"><br>
-	</form>
-	<br>
-	<p> Tell us how we can improve: </p>
-	<textarea rows="10" cols="92" name="explanation" id="explanation" form="contactForm"> </textarea> 
+  <div id="slidecontainer">
+    Notifications:
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  </div>
 </center>
-
 <br>
-
-<center> 
-	<div class = "contactUsButton"> 
-		<span class ="contactUs"> <br> <a style="text-decoration: none" class="contactUsButton" href=""> Submit </a> </span> 
-	</div> 
+<center>
+  <div id="slidecontainer">
+      System:
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  </div>
 </center>
-  
-<br>
-</div> <!--end of content div-->
 
 <!--footer-->
 <div id="footer">
 	<br>
 	<div id="column">
-		<a href=""> Terms and Conditions </a> <br>
-		<a href=""> Help </a> <br>
+		<a href=".../www.google.ca"> Terms and Conditions </a> <br>
+		<a href="www.google.ca"> Help </a> <br>
 	</div>
   	<div id="column">
-  		<a href=""> About Sealion </a> <br>
+  		<a href="www.google.ca"> About Sealion </a> <br>
   		<a href="contactUs.html"> Contact Us </a>
   	</div>
 	
 </div>
 <!--end of footer-->
-		
-</div> <!-- end of wrapper div-->
 
 </body>
 </html>
