@@ -1,11 +1,11 @@
 .table{
   border-style: solid;
   border: 10px,10px,10px,10px;
-  display: table;
+  display: inline-grid;
 }
 .row{
-  display: table-row;
+  display: inline-grid;
 }
 .cell{
-  display: table-cell;
+  display: inline-grid;
 }

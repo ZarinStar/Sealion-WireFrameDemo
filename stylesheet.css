@@ -93,8 +93,16 @@ img {
 }
 .weekView_Day tr td{
   border: none;
-  padding: 0px 50px 5px 0px;
+  padding: 0px 0px 5px 0px;
+  height: 100px;
+  width: 100px;
 }
 .last_taken{
   font-size: 10px;
+}
+.btn{
+   width: 100%;
+   height: 100%;
+   font-size: 30px;
+   white-space: normal;
 }
