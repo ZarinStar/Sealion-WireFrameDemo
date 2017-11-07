@@ -220,6 +220,9 @@ p {
     background: white;
     cursor: pointer;
 }
+.slider:after {
+    clear: both;
+}
 
 #sectionDiv{
     position: absolute;
@@ -259,4 +262,7 @@ p {
     border-radius: 50%;
     background: white;
     cursor: pointer;
+}
+.sliderToggle:after {
+    clear: both;
 }

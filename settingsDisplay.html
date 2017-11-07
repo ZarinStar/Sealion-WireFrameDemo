@@ -66,21 +66,19 @@ function checkTime(i) {
 <h1 class ="contactUs"> Settings - Display</h1>
 
 	<div class = "backPageButton" style="text-decoration: none;"> <a href="settings.html"> <img src="assets/backArrow.png" height="55" width="70"> </a> 
-	</div> 
+	</div>
 
-
-<br>
-<br>
 <center>
-  <div id="slidecontainer">
+  <div id="slidecontainer2">
+    <form action="">
     <p class="main" style="color: black;"> Screen Brightness: Volume at <span id="rangeOne"> 50</span>%</p>
     <input type="range" min="0" max="100" value="50" class="slider" id="rangeOne" onchange="showValueOne(this.value)">
+    </form>
   </div>
 </center>
 
 <br>
-<br>
-<div id="sectionDiv"> <p class="main" style="color: black;"> Font Size:</p>
+<div id="sectionDiv"> <p class="main" style="color: black;"> <br> Font Size: </p>
     <form action="">
     <input type="radio" name="gender" value="large"> <span style="font-size: 32px; color: black;"> Large </span> <br>
     <input type="radio" name="gender" value="medium"> <span style="font-size: 26px; color: black;"> Medium </span><br>
@@ -106,12 +104,13 @@ function showValueOne(newValue)
 <br>
 <br>
 <br>
-<br>
 
 <center>
   <div id="slidecontainer">
     <p class="main" style="color: black;"> Contrast: <span id="toggle"> Off</span></p>
+    <form action="">
     <input type="range" min="1" max="2" value="1" class="sliderToggle" id="toggle" onchange="showToggle(this.value)">
+     </form>
   </div>
 </center>
 
