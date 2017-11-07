@@ -15,7 +15,8 @@ html {
 
 #mainBackground {
     /*background-color: rgb(44,88,104);*/ /*teal colour of CLC logo*/
-    background-color: rgb(117,185,168);
+    /*background-color: rgb(117,185,168);*/
+    background-color: white;
 }
 
 #mainDiv {
@@ -62,7 +63,7 @@ div.backPageButton {
 div.header {
     height: 15%;
     width: 100%;
-    background-color: white;
+    background-color: rgb(117,185,168);
     font-family: "Verdana";
     margin-left: -40px;
     margin-top: -30px;
@@ -86,7 +87,7 @@ div.header {
 #footer {
   height: 10%;
   width: 100%;
-  background-color: white;
+  background-color: rgb(117,185,168);
   margin-left: -40px;
   position:absolute;
   bottom:0;
@@ -116,7 +117,7 @@ div.contactUs {
     height: 100px;
     width: 30%;
     /*background-color: rgb(0,129,196);*/
-    color: white;
+    /*color: white;*/
     text-align: center;
 }
 span.contactUs {
