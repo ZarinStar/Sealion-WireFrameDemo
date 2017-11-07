@@ -82,3 +82,19 @@ img {
    overflow-x: hidden;
    padding: 5px;
 }
+
+.weekView{
+  width: 100%;
+  border: 1px solid #0F58E8
+}
+.weekView_Day{
+  border: none;
+  padding: 0px 0px 0px 0px
+}
+.weekView_Day tr td{
+  border: none;
+  padding: 0px 50px 5px 0px;
+}
+.last_taken{
+  font-size: 10px;
+}
