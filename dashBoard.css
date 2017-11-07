@@ -1,0 +1,50 @@
+.medButton {
+	background-color:#75a9a8;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:28px;
+	padding:32px 32px;
+	text-decoration:none;
+}
+.medButton:hover {
+	background-color:#75b9a8;
+}
+.medButton:active {
+	position:relative;
+	top:1px;
+}
+.profileImage {
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border-width:2px;
+	border-color:#75a9a8;
+	border:1px solid black;
+}
+.tempHead {
+	width:100%;
+	height:150px;
+	background:#75a9a8;
+	position:relative;
+	top:0px;
+}
+.tempFoot {
+	width:100%;
+	height:100px;
+	background:#75a9a8;
+	position:fixed;
+	bottom:0px;
+}
+.notifcations {
+	background-color:#75a9a8;
+	width:25px;
+	height:25px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
