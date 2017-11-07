@@ -46,9 +46,17 @@ a.gear {
 }
 
 div.buttonLink {
-    height: 50px;
-    width: 20%;
-    background-color: green;
+    height: 80px;
+    width: 15%;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div.backPageButton {
+    height: 55px;
+    width: 90px;
+    background-color: white;
 }
 
 div.header {
