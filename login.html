@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html>
+	<HEAD> 
+		<title>Medify - Login</title> 
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+	</HEAD>
 
-<HEAD> 
-	<title>Home</title> 
-	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-</HEAD>
+	<body>
+		<img class="logo" src="logo.png">
+		<h1 style="text-align: center;">Welcome to <b style="color:#126872; ">Medify</b>!</h1>
+		
+		<div class="center">
+			<h3 style="text-align: center;">Login:</h3>
+			<form action="/registerAccount.html">
+		  		<div style="text-align: center;">
+		  			Username:
+		  			<input type="text" name="username" value="">
+		  		</div>
 
-<body>
-	<img class="logo" src="logo.png">
-	<h1 style="text-align: center;">Welcome to <b style="color:#126872; ">Medify</b>!</h1>
-	
-	<div class="center">
-		<h3 style="text-align: center;">Login:</h3>
-		<form action="/registerAccount.html">
-	  		<p style="text-align: center;">Username:</p>
-	  		<div style="text-align: center;">
-	  			<input type="text" name="username" value="">
-	  		</div>
-	  		
-	  		<p style="text-align: center;">Password:</p>
-	  		<div style="text-align: center;">
-	  			<input type="text" name="password" value="">
-	  		</div>
-	  		<br>
+		  		<br> 
+		  		
+		  		<div style="text-align: center;">
+		  			Password:
+		  			<input type="text" name="password" value="">
+		  		</div>
+		  		
+		  		<br>
 
-	  		<div style="text-align: center;"> 
-	  			<a href="registerAccount.html"> 
-	  			<button type="button">Login</button></a> 
-			</div> 
+		  		<a href="forgotPassword.html">Forgot your password?</a>
 
-			<div style="text-align: center;"> 
-	  			<a href="registerAccount.html"> 
-	  			<button type="button">Create an Account</button></a> 
-			</div> 
-	  		
-	  		
-	  		<br><br>
-		</form> 
-	</div>
-</body>
+		  		<div class="confirm" >
+		  			<div style="display: table-row;">
+					<div class="confirm_left"> 
+			  			<a href="registerAccount.html"> 
+			  			<button class="login_button" type="button">Create an Account</button></a> 
+					</div> 
 
+					<div class="confirm_right"> 
+			  			<a href="registerAccount.html"> 
+			  			<button class="login_button" type="button">Login</button></a> 
+					</div> 
+				</div>
+		  		</div>
+		  		
+		  		<br><br>
+			</form> 
+		</div>
+	</body>
 </html>
