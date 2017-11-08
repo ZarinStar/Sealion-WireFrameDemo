@@ -39,8 +39,6 @@
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-auto-rows: minmax(100px,auto);
-
-
 }
 .med-item{
     border-radius: 5px;
@@ -58,6 +56,29 @@
     vertical-align: middle;
     font-size: 18px;
 }
+
+.day-container{
+    display: grid;
+    height:100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-auto-rows: minmax(25px,auto);
+}
+
+.day-item div
+{
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.day-item div div{
+
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
 
 .btn{
     width: 100%;
