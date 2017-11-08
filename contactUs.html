@@ -97,10 +97,14 @@ function checkTime(i) {
 
 <center> 
 	<div class = "contactUsButton"> 
-		<span class ="contactUs"> <br> <a style="text-decoration: none" class="contactUsButton" href=""> Submit </a> </span> 
+		<span class ="contactUs"> <br> <a style="text-decoration: none" class="contactUsButton" onclick="goBack()"> Submit </a> </span> 
+    <script>function goBack() {
+            window.history.back();
+        }
+        </script>
 	</div> 
 </center>
-  
+
 <br>
 </div> <!--end of content div-->
 
