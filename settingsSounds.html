@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<HEAD> <title> Settings - Sounds </title> </HEAD>
+
+<body>
+
+<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+<body id ="mainBackground">
+  
+<!--beginning of header-->
+<!--For the clock in the header-->
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    //var s = today.getSeconds();
+    m = checkTime(m);
+    //s = checkTime(s);
+    if (0 <= h && h <= 11) /*12am to 11:59am*/
+    {
+      if (h == 0)
+      {
+        h = 12;
+      }
+    	document.getElementById('txt').innerHTML = h + ":" + m + " am"; //+ ":" + s;
+    }
+    else { /*12pm to 11:59pm*/
+      if (h == 12)
+      {
+        h = 12;
+      }
+      else{
+        h = h - 12;
+      }
+    	document.getElementById('txt').innerHTML = h + ":" + m + " pm"; //+ ":" + s;
+    }
+
+    /*document.getElementById('txt').innerHTML = h + ":" + m; //+ ":" + s;*/
+    
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+
+<body onload="startTime()">
+
+<div class = "header"> 
+	<br> 
+	<h1 style="text-align:left; margin-left: 15px;"> Medicatify 
+		<span style="float:right; margin-right: 15px;" <div id="txt"> </div> </span> 
+	</h1> 
+</div>
+
+<!--end of header-->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 class ="contactUs"> Settings - Sounds</h1>
+
+	<div class = "backPageButton" style="text-decoration: none;"> <a href="settings.html"> <img src="assets/backArrow.png" height="55" width="70"> </a> 
+	</div> 
+
+
+<br>
+<br>
+<center>
+  <div id="slidecontainer">
+    <p class="main" style="color: black;"> Notifications: Volume at <span id="rangeOne"> 50</span>%</p>
+    <input type="range" min="0" max="100" value="50" class="slider" id="rangeOne" onchange="showValueOne(this.value)">
+  </div>
+</center>
+<br>
+<br>
+<center>
+  <div id="slidecontainer">
+      <p class="main" style="color: black;"> System: Volume at <span id="rangeTwo"> 50</span>%</p>
+    <input type="range" min="0" max="100" value="50" class="slider" id="rangeTwo" onchange="showValueTwo(this.value)">
+    
+  </div>
+</center>
+
+<!--<input type="range" min="0" max="50" value="0" step="5" onchange="showValue(this.value)" />
+<span id="range">0</span>-->
+<script type="text/javascript">
+function showValueOne(newValue)
+{
+  document.getElementById("rangeOne").innerHTML=newValue;
+}
+function showValueTwo(newValue)
+{
+  document.getElementById("rangeTwo").innerHTML=newValue;
+}
+</script>
+
+<!--footer-->
+<div id="footer">
+	<br>
+	<div id="column">
+		<a href="TAC.html"> Terms and Conditions </a> <br>
+		<a href="www.google.ca"> Help </a> <br>
+	</div>
+  	<div id="column">
+  		<a href="www.google.ca"> About Sealion </a> <br>
+  		<a href="contactUs.html"> Contact Us </a>
+  	</div>
+	
+</div>
+<!--end of footer-->
+
+</body>
+</html>

@@ -1,11 +1,44 @@
+/******************
+COLOUR REFERENCES:
+
+> Teal (44,88,104) as decided by pod 1 for main background
+
+FROM LOGO:
+
+> Blue (0,129,196)
+> Green (117,185,168)
+*****************/
+html {
+  margin:0;
+  padding:0;
+}
 
 #mainBackground {
-    background-color: rgb(44,88,104);
+    /*background-color: rgb(44,88,104);*/ /*teal colour of CLC logo*/
+    /*background-color: rgb(117,185,168);*/
+    background-color: white;
 }
 
 #mainDiv {
 	background-color: white;
 }
+
+p.main{
+	font-size: 150%;
+}
+/**subclass of p.main**/
+/*p.main .center
+{
+	text-align:center;
+  	vertical-align: middle;
+}*/
+
+/*div.contactUs {
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  border: 2px dashed #f69c55;
+}*/
 
 
 a.gear {
@@ -14,15 +47,102 @@ a.gear {
 }
 
 div.buttonLink {
-    height: 50px;
-    width: 20%;
-    background-color: green;
+    height: 85px;
+    width: 15%;
+    background-color: rgb(117,185,168);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
+div.backPageButton {
+    height: 55px;
+    width: 90px;
+    background-color: rgb(117,185,168);
+}
+
+div.header {
+    height: 15%;
+    width: 100%;
+    background-color: rgb(117,185,168);
+    font-family: "Verdana";
+    margin-left: -40px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    top:0;
+    position: absolute;
+}
+/*#header {
+  width:100%;
+}
+#left {
+  float:left;
+}
+#center{
+  margin:0 auto;
+}
+#right{
+  float:right;
+}*/
+
+#footer {
+  height: 10%;
+  width: 100%;
+  background-color: rgb(117,185,168);
+  margin-left: -40px;
+  position:absolute;
+  bottom:0;
+}
+/*#footer > a {
+  text-decoration: none;
+  color: rgb(0,129,196);
+}*/
+#column{
+  text-align: center;
+  float: left;
+  width: 50%;
+}
+#column > a {
+  text-decoration: none;
+  color: #4d4d4d;
+  /*color: rgb(0,129,196);*/
+  font-family: "Helvetica";
+}
+#footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/**For Contact Us page*/
+div.contactUs {
+    height: 100px;
+    width: 30%;
+    /*background-color: rgb(0,129,196);*/
+    /*color: white;*/
+    text-align: center;
+}
+span.contactUs {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+div.contactUsButton {
+    height: 55px;
+    width: 10%;
+    background-color: rgb(44,88,104);
+    text-align: center;
+}
+h1.contactUs {
+  /*color: white;*/
+  color: #4d4d4d;
+  margin-left: 15px;
+}
+a.contactUsButton{
+  color: white;
+}
 /* http://www.w3schools.com/tags/ref_colorpicker.asp */
 
 h1 {
-	margin-top: 40px;
 	font-weight: lighter;
 	letter-spacing: 3px;
 	font-size: 50px;
@@ -33,9 +153,9 @@ h3 {
 	letter-spacing: 2px;
 }
 
-h1, h3, h4, h5 {
+/*h1, h3, h4, h5 {
 	color: #4d4d4d;
-}
+}*/
 
 body {
 	/*background-image: url("mountains.jpg");*/
@@ -44,23 +164,27 @@ body {
     margin: 10px 40px 10px 40px;
     font-family: "Helvetica";
     font-weight: lighter;
-    color: #666666;
+   /* color: #666666;*/
+
 }
 
 input {
 	font-weight: lighter;
 	letter-spacing: 0.5px;
 	font-size: 14px;
+  border-radius: 5px;
+  display:inline-block;
 }
 
 p {
 	letter-spacing: 0.5px;
+  text-align: center;
 }
 
-img {
+.logo {
     display: block;
     margin: auto;
-    width: 40%;
+    width: 30%;
 }
 
 .center {
@@ -70,7 +194,152 @@ img {
 
 .border{
     border: 1px solid #0F58E8;
+    width: 80%;
     padding: 10px;
+    text-align: center;
+    border: 1px solid #18C29C;
+    background-color: #18C29C;
+    border-radius: 40px 0px 40px 0px;
+}
+
+.center_inverse {
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid #18C29C;
+    background-color: white;
+    border-radius: 40px 0px 40px 0px;
+}
+
+
+.confirm {
+  margin: auto;
+  text-align:center;
+  width: 70%;
+  display: table;
+}
+
+.confirm_left {
+  /*float:left;*/
+  display: table-cell;
+  width: 50%;
+}
+
+.confirm_right {
+  display: table-cell;
+}
+
+.login_button {
+    background-color: #88F9D4;
+    border: 1px solid #18C29C;
+    color: #126872;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*For the settings*/
+.slider {
+    -webkit-appearance: none;
+    width: 45%;
+    height: 15px;
+    border-radius: 5px;
+    background: rgb(0,129,196);
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+.slider:after {
+    clear: both;
+}
+
+#sectionDiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 150px;
+    height: 150px;
+}​
+
+/*For the toggle switch*/
+.sliderToggle {
+    -webkit-appearance: none;
+    width: 40%;
+    height: 15px;
+    border-radius: 5px;
+    background: rgb(0,129,196);
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.sliderToggle::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+
+.sliderToggle::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+.sliderToggle:after {
+    clear: both;
+}
+
+.img-with-text {
+    text-align: justify;
+    width: 180px;
+}
+
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
+}
+
+/*For the client's profile page*/
+.columnProfile {
+    float: left;
+    padding: 10px;
+    height: 300px;
+}
+.left, .right {
+    width: 25%;
+    padding-left: 80px;
+}
+.middle {
+    width: 45%;
 }
 
 .scrollBox
@@ -81,4 +350,10 @@ img {
    overflow: scroll;
    overflow-x: hidden;
    padding: 5px;
+}
+/* Clear floats after the columns */
+.rowProfile:after {
+    content: "";
+    display: table;
+    clear: both;
 }

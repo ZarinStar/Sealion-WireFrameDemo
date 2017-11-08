@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 
-<HEAD> <title> Settings </title> </HEAD>
+<HEAD> <title> Contact Us </title></HEAD>
 
 <body>
 
 <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 <body id ="mainBackground">
-  
+
+
+<div id="wrapper">
+
 <!--beginning of header-->
 <!--For the clock in the header-->
 <script>
@@ -24,7 +27,7 @@ function startTime() {
       {
         h = 12;
       }
-        document.getElementById('txt').innerHTML = h + ":" + m + " am"; //+ ":" + s;
+    	document.getElementById('txt').innerHTML = h + ":" + m + " am"; //+ ":" + s;
     }
     else { /*12pm to 11:59pm*/
       if (h == 12)
@@ -34,7 +37,7 @@ function startTime() {
       else{
         h = h - 12;
       }
-        document.getElementById('txt').innerHTML = h + ":" + m + " pm"; //+ ":" + s;
+    	document.getElementById('txt').innerHTML = h + ":" + m + " pm"; //+ ":" + s;
     }
 
     /*document.getElementById('txt').innerHTML = h + ":" + m; //+ ":" + s;*/
@@ -57,19 +60,12 @@ function checkTime(i) {
 </div>
 
 <!--end of header-->
-
-<!--<br>
-<br>
-<br>
-<br>
-<br>
-<h1 class ="contactUs"> Settings </h1> -->
 <br>
 <br>
 <br>
 <br>
 <div id="content">
-<h1 class ="contactUs"  style = "position:relative;float:left;"> Settings </h1>
+<h1 class ="contactUs"  style = "position:relative;float:left;"> Contact Us </h1>
 <br>
 <div class="icons" style = "position:relative;float:right;">
   <button class="notifications"><img src="./assets/envelope-icon.png" style="width:25px;height:25px;"></button> 
@@ -77,29 +73,40 @@ function checkTime(i) {
 </div>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 <center> 
-	<div class = "buttonLink"> <a href="settingsDisplay.html"> <img src="assets/display.png" height="80" width="80"> </a> 
+	<div class="contactUs"> 
+		<span class ="contactUs"> 
+			<p class="main"> Do you have suggestions for future updates? <br> Please submit your feedback here. </p> 
+		</span> 
 	</div> 
 </center>
 <br>
-<center> 
-	<div class = "buttonLink"> <a href="settingsSounds.html" > <img src="assets/speaker.svg" height="80" width="70"></a> 
-	</div> 
-</center>
-<br>
-<!--
-<center> 
-	<div class = "buttonLink"><a href="www.google.ca" class="gear" > click me! </a> 
-	</div> 
-</center>  -->
 <br>
 
+<center>
+	<form action="/action_page.php" id="contactForm">
+		Email: <input type="text" name="email"><br>
+	</form>
+	<br>
+	<p> Tell us how we can improve: </p>
+	<textarea rows="10" cols="92" name="explanation" id="explanation" form="contactForm"> </textarea> 
+</center>
+
+<br>
+
+<center> 
+	<div class = "contactUsButton"> 
+		<span class ="contactUs"> <br> <a style="text-decoration: none" class="contactUsButton" onclick="goBack()"> Submit </a> </span> 
+    <script>function goBack() {
+            window.history.back();
+        }
+        </script>
+	</div> 
+</center>
+
+<br>
+</div> <!--end of content div-->
 
 <!--footer-->
 <div id="footer">
@@ -115,6 +122,8 @@ function checkTime(i) {
   
 </div>
 <!--end of footer-->
+		
+</div> <!-- end of wrapper div-->
 
 </body>
 </html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<HEAD> <title> Profile Page </title> 
+<style>
+* {
+    box-sizing: border-box;
+}
+</style>
+</HEAD>
+
+<body>
+
+<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+<link type="text/css" rel="stylesheet" href="dashBoard.css"/>
+<body id ="mainBackground">
+  
+<!--beginning of header-->
+<!--For the clock in the header-->
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    //var s = today.getSeconds();
+    m = checkTime(m);
+    //s = checkTime(s);
+    if (0 <= h && h <= 11) /*12am to 11:59am*/
+    {
+      if (h == 0)
+      {
+        h = 12;
+      }
+        document.getElementById('txt').innerHTML = h + ":" + m + " am"; //+ ":" + s;
+    }
+    else { /*12pm to 11:59pm*/
+      if (h == 12)
+      {
+        h = 12;
+      }
+      else{
+        h = h - 12;
+      }
+        document.getElementById('txt').innerHTML = h + ":" + m + " pm"; //+ ":" + s;
+    }
+
+    /*document.getElementById('txt').innerHTML = h + ":" + m; //+ ":" + s;*/
+    
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+
+<body onload="startTime()">
+
+<div class = "header"> 
+	<br> 
+	<h1 style="text-align:left; margin-left: 15px;"> Medicatify 
+		<span style="float:right; margin-right: 15px;" <div id="txt"> </div> </span> 
+	</h1> 
+</div>
+
+<!--end of header-->
+
+<br>
+<br>
+<br>
+<br>
+<div id="content">
+<h1 class ="contactUs" style="position:relative;float:left;"> John Smith - Client </h1>
+<br>
+<div class="icons" style = "position:relative;float:right;">
+  <button class="notifications"><img src="./assets/envelope-icon.png" style="width:25px;height:25px;"></button> 
+  <button class="notifications"><a href="settings.html"><img src="./assets/gear-icon.png" style="width:25px;height:25px;">  </a></button> 
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--Start of main context-->
+
+<!--<div style="position:relative;top:50px;float:left;">
+  <img src="./assets/stock-man.jpg" style="float:left;width:130px;height:150px;"> <br>
+<p> DOB: August 15, 1970</p>
+<p> Gender: Male</p>
+<p> Recent Milestone: 20 day streak!</p> </div>-->
+<div class="rowProfile" style="position:relative;float:left;">
+  <div class="columnProfile left">
+    <div class="img-with-text" style="margin-left:10px;">
+    
+      <center><img src="./assets/stock-man.jpg" style="width:150px;height:170px;"/>
+      <p> <b>DOB:</b> August 15, 1970</p>
+      <p> <b>Gender:</b> Male</p>
+      <p> <b>Recent Milestone: </b><br>20 day streak!</p></center>
+    </div>
+  </div>
+  <div class="columnProfile middle">
+    <h2>Background:</h2>
+    <p>Endeavor bachelor but add eat pleasure doubtful sociable. Age forming covered you entered the examine. Blessing scarcely confined her contempt wondered shy. Dashwoods contented sportsmen at up no convinced cordially affection. Am so continued resembled frankness disposing engrossed dashwoods. Earnest greater on no observe fortune norland. Hunted mrs ham wishes stairs. Continued he as so breakfast shameless. All men drew its post knew. Of talking of calling however civilly wishing resolve.</p>
+
+    <p>He as compliment unreserved projecting. Between had observe pretend delight for believe. Do newspaper questions consulted sweetness do. Our sportsman his unwilling fulfilled departure law. Now world own total saved above her cause table. Wicket myself her square remark the should far secure. Smiling cousins warrant law explain for whether.</p>
+
+    <p>Ye to misery wisdom plenty polite to as. Prepared interest proposal it he exercise. My wishing an in attempt ferrars. Visited eat you why service looking engaged. At place no walls hopes rooms fully in. Roof hope shy tore leaf joy paid boy. Noisier out brought entered detract because sitting sir. Fat put occasion rendered off humanity has.</p></p>
+  </div>
+  <div class="columnProfile right" style="padding-left:40px;">
+    <center>
+    <a href="#" class="medButton">View Medication Schedule</a> <br><br>
+    <a href="#" class="medButton">Edit Medication Schedule</a> <br><br>
+    <a href="generateReportSearch.html" class="medButton">Generate Reports</a>
+    </center>
+  </div>
+</div>
+
+<!--footer-->
+<div id="footer">
+	<br>
+	<div id="column">
+		<a href="TAC.html"> Terms and Conditions </a> <br>
+		<a href="#"> Help </a> <br>
+	</div>
+  	<div id="column">
+  		<a href="aboutUs.html"> About Sealion </a> <br>
+  		<a href="contactUs.html"> Contact Us </a>
+  	</div>
+	
+</div>
+<!--end of footer-->
+
+</body>
+</html>

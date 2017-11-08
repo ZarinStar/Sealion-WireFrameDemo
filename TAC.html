@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<HEAD> 
+	<title>Home</title> 
+	<link type="text/css" rel="stylesheet" href="dashBoard.css"/>
+	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+	
+</HEAD>
+
+<!--<body style="margin:0;">-->
+<div id="wrapper">
+<!--beginning of header-->
+<!--For the clock in the header-->
+
+<!--<div class = "tempHead" style="margin-right:-40px"> 
+  <br> 
+  <body onload="startTime()">
+  <h1 style="text-align:left; margin-left: 35px;"> Medicatify 
+    <span style="float:right; margin-right: 10px;" <div id="txt"> </div> </span> 
+  </h1> 
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>-->
+
+<body onload="startTime()">
+
+<div class = "header"> 
+  <br> 
+  <h1 style="text-align:left; margin-left:15px;"> Medicatify 
+    <span style="float:right; margin-right:15px;" <div id="txt"> </div> </span> 
+  </h1> 
+</div>
+
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    //var s = today.getSeconds();
+    m = checkTime(m);
+    //s = checkTime(s);
+    if (0 <= h && h <= 11) /*12am to 11:59am*/
+    {
+      if (h == 0)
+      {
+        h = 12;
+      }
+        document.getElementById('txt').innerHTML = h + ":" + m + " am"; //+ ":" + s;
+    }
+    else { /*12pm to 11:59pm*/
+      if (h == 12)
+      {
+        h = 12;
+      }
+      else{
+        h = h - 12;
+      }
+        document.getElementById('txt').innerHTML = h + ":" + m + " pm"; //+ ":" + s;
+    }
+
+    /*document.getElementById('txt').innerHTML = h + ":" + m; //+ ":" + s;*/
+    
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+
+<!--<body onload="startTime()">
+<div class = "tempHead" style="margin-top:-40px;"> 
+	<h1 style="text-align:left;"> Medicatify 
+		<span style="float:right;" <div id="txt"> </div> </span> 
+	</h1> 
+</div>-->
+
+<!--end of header-->
+
+<br>
+<br>
+<br>
+<br><br>
+<div class="icons" style = "position:relative;float:right;">
+	<button class="notifications"><img src="./assets/envelope-icon.png" style="width:25px;height:25px;"></button> 
+	<button class="notifications"><a href="settings.html"><img src="./assets/gear-icon.png" style="width:25px;height:25px;">  </a></button>
+</div>
+<H2>Terms And Conditions</H2>
+<a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nibh ac lorem varius laoreet quis id arcu. Nullam facilisis ut erat ac iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas varius sem ipsum, in tempus felis suscipit non. Pellentesque vel mi at ipsum eleifend tincidunt. Phasellus pellentesque vel leo sed commodo. Vestibulum blandit erat eget neque sollicitudin sodales a a metus. Etiam ac elementum libero.<br>
+
+Maecenas tristique lorem a velit volutpat aliquet. Curabitur at ipsum lacus. Vivamus commodo diam risus, non auctor diam blandit sit amet. Praesent massa mauris, dictum et dictum in, bibendum non nibh. Morbi convallis eget nibh in hendrerit. Donec eget libero tincidunt, fringilla leo eu, rhoncus arcu. Suspendisse at vestibulum tortor. Quisque pretium tortor velit, ac rhoncus odio aliquam nec. Phasellus sed purus ut purus accumsan tincidunt et non risus. Sed non blandit urna. Nam urna massa, interdum sit amet vestibulum nec, ornare id sapien. Phasellus dapibus, quam in eleifend commodo, dui leo iaculis libero, eu tristique diam est id metus. Mauris ut aliquam lacus. <br>
+
+Ut lacinia ante vitae magna vestibulum, a fermentum lectus feugiat. Quisque at congue tortor, consequat efficitur felis. Fusce a odio non velit hendrerit facilisis ac sit amet tellus. In in mi semper, egestas augue scelerisque, pulvinar justo. Nulla pretium, est quis sagittis gravida, arcu leo tincidunt magna, eget ornare dolor eros eget orci. Nam non dapibus orci. Nullam vel suscipit mi. <br>
+
+Sed sed mauris tempor, venenatis lacus in, viverra ligula. Mauris vestibulum felis in efficitur tempus. Maecenas sodales sapien a massa malesuada, eget rhoncus odio aliquet. Donec et leo porttitor, laoreet elit in, interdum dui. Phasellus fermentum ante a fermentum volutpat. Morbi id justo eu dolor rhoncus ultricies a dapibus tortor. Praesent interdum justo ac nulla viverra, sit amet feugiat dolor lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque finibus convallis lobortis. Morbi lobortis condimentum rhoncus. Maecenas luctus aliquet sem, et facilisis justo dictum et. Sed scelerisque sollicitudin ipsum nec sodales. <br>
+
+Morbi bibendum diam a nunc viverra, in cursus massa auctor. Donec eget eros ex. Donec iaculis fermentum tristique. Vivamus ut lectus id risus convallis tincidunt. Suspendisse tempor magna eget rhoncus sollicitudin. Ut rhoncus ex sed arcu tincidunt pharetra. Cras eget consectetur ipsum. Donec vel magna at ligula volutpat posuere sit amet id diam. Integer fringilla, massa et malesuada egestas, sapien neque commodo magna, ultricies faucibus ex dui a mi.</a>
+<a href="#" class="medButton">Confirm</a>
+<!--footer-->
+<div id="footer">
+  <br>
+  <div id="column">
+    <a href="TAC.html"> Terms and Conditions </a> <br>
+    <a href="#"> Help </a> <br>
+  </div>
+    <div id="column">
+      <a href="aboutUs.html"> About Sealion </a> <br>
+      <a href="contactUs.html"> Contact Us </a>
+    </div>
+  
+</div>
+<!--end of footer-->
+    
+</div> <!-- end of wrapper div-->
+
+</body>
+
+</html>
