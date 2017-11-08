@@ -8,9 +8,33 @@
 	
 </HEAD>
 
-<body style="margin:0;">
+<!--<body style="margin:0;">-->
+<div id="wrapper">
 <!--beginning of header-->
 <!--For the clock in the header-->
+
+<!--<div class = "tempHead" style="margin-right:-40px"> 
+  <br> 
+  <body onload="startTime()">
+  <h1 style="text-align:left; margin-left: 35px;"> Medicatify 
+    <span style="float:right; margin-right: 10px;" <div id="txt"> </div> </span> 
+  </h1> 
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>-->
+
+<body onload="startTime()">
+
+<div class = "header"> 
+  <br> 
+  <h1 style="text-align:left; margin-left:15px;"> Medicatify 
+    <span style="float:right; margin-right:15px;" <div id="txt"> </div> </span> 
+  </h1> 
+</div>
+
 <script>
 function startTime() {
     var today = new Date();
@@ -48,33 +72,49 @@ function checkTime(i) {
 }
 </script>
 
-<body onload="startTime()">
+<!--<body onload="startTime()">
 <div class = "tempHead" style="margin-top:-40px;"> 
 	<h1 style="text-align:left;"> Medicatify 
 		<span style="float:right;" <div id="txt"> </div> </span> 
 	</h1> 
-</div>
+</div>-->
 
 <!--end of header-->
 
 <br>
+<br>
+<br>
+<br><br>
 <div class="icons" style = "position:relative;float:right;">
 	<button class="notifications"><img src="./assets/envelope-icon.png" style="width:25px;height:25px;"></button> 
 	<button class="notifications"><a href="settings.html"><img src="./assets/gear-icon.png" style="width:25px;height:25px;">  </a></button> 
 </div>
-<div style="position:relative;left:100px;top:50px;">
+<div style="position:relative;left:40px;top:50px;">
 	<img class="profileImage" src="./assets/stock-woman.jpg" style="float:left;width:125px;height:150px;">
-	<font size="7" style="position:relative;top:100px;left:200px;font-family: helvetica;font-weight:lighter;"> Welcome, Sarah </font>
+	<font size="7" style="position:relative;top:100px;left:120px;font-family: helvetica;font-weight:lighter;"> Welcome, Sarah </font>
 </div>
-<div class="buttons" style="position:relative;top:300px;left:100px">
+<div class="buttons" style="position:relative;top:300px;left:40px">
 	<a href="#" class="medButton">Took Meds?</a>
 	<a href="#" class="medButton">Calender</a>
 	<a href="#" class="medButton">Milestones</a>
 </div>
-<div class="tempFoot">
-	<a> text </a>
-</div>
 
+<!--footer-->
+<div id="footer">
+  <br>
+  <div id="column">
+    <a href="#"> Terms and Conditions </a> <br>
+    <a href="#"> Help </a> <br>
+  </div>
+    <div id="column">
+      <a href="aboutUs.html"> About Sealion </a> <br>
+      <a href="contactUs.html"> Contact Us </a>
+    </div>
+  
+</div>
+<!--end of footer-->
+    
+</div> <!-- end of wrapper div-->
 
 </body>
 
