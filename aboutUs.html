@@ -13,8 +13,13 @@
 
 			<img class="logo" src="logo.png">
 			<div> 
-		  		<a href="login.html"> 
-		  		<button class="login_button" type="button">Back</button></a> 
+		  		<button class="login_button" onclick="goBack()" type="button">Back</button></a> 
+				<script>
+				function goBack() {
+				    window.history.back();
+				}
+				</script>
+
 			</div> 
 		</div>
 	</body>

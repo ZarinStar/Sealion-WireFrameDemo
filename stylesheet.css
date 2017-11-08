@@ -311,3 +311,33 @@ p {
 .sliderToggle:after {
     clear: both;
 }
+
+.img-with-text {
+    text-align: justify;
+    width: 180px;
+}
+
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
+}
+
+/*For the client's profile page*/
+.columnProfile {
+    float: left;
+    padding: 10px;
+    height: 300px;
+}
+.left, .right {
+    width: 25%;
+    padding-left: 80px;
+}
+.middle {
+    width: 45%;
+}
+/* Clear floats after the columns */
+.rowProfile:after {
+    content: "";
+    display: table;
+    clear: both;
+}
