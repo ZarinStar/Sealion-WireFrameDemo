@@ -1,11 +1,8 @@
-.table{
-  border-style: solid;
-  border: 10px,10px,10px,10px;
-  display: inline-grid;
+.container{
+  display: grid;
 }
-.row{
-  display: inline-grid;
-}
-.cell{
-  display: inline-grid;
+.item{
+  border-style:solid;
+  border: 1px,1px,1px,1px
+
 }
