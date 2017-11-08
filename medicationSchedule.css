@@ -3,11 +3,18 @@
     border-width: 1px;
 }*/
 
+#pageTitle{
+    text-align: center;
+    margin-top: 150px;
+    font-family: "Helvetica";
+    font-weight: lighter;
+}
 .main-container{
     display: grid;
     margin: auto;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr, 1fr;
+    margin-bottom: 200px;
 }
 
 .schedule-container{
@@ -16,7 +23,6 @@
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
-
 }
 
 .item{
@@ -89,11 +95,6 @@
 
 }
 
-
-
-
-
-
 .view-container{
      grid-column-start:3;
      display: grid;
@@ -112,11 +113,11 @@
     width: 100%;
     text-align: center;
     vertical-align: middle;
-    grid-column: auto;
+
 
 }
 .active{
-    background-color: green;
+    background-color: rgb(117,185,168);
 
 }
 
@@ -131,11 +132,20 @@ a:visited {
 }
 
 a:hover {
-    text-decoration: underline;
-    color: blue;
+    text-decoration: none;
 }
 
 a:active {
     text-decoration: none;
     color: black;
+}
+
+
+.main-container #footer {
+  position: fixed;
+  bottom: 0;
+  height: 10%;
+  width: 100%;
+  background-color: rgb(117,185,168);
+
 }

@@ -4,10 +4,61 @@
 <head>
 	<title>Medication Schedule (Medication View)</title>
 	<link type="text/css" rel="stylesheet" href="medicationSchedule.css"/>
+	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 </head>
 
 <body>
-	<h1 style="text-align: center;">Medication Schedule (Medication View) </b></h1>
+<!--beginning of header-->
+<!--For the clock in the header-->
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    //var s = today.getSeconds();
+    m = checkTime(m);
+    //s = checkTime(s);
+    if (0 <= h && h <= 11) /*12am to 11:59am*/
+    {
+      if (h == 0)
+      {
+        h = 12;
+      }
+    	document.getElementById('txt').innerHTML = h + ":" + m + " am"; //+ ":" + s;
+    }
+    else { /*12pm to 11:59pm*/
+      if (h == 12)
+      {
+        h = 12;
+      }
+      else{
+        h = h - 12;
+      }
+    	document.getElementById('txt').innerHTML = h + ":" + m + " pm"; //+ ":" + s;
+    }
+
+    /*document.getElementById('txt').innerHTML = h + ":" + m; //+ ":" + s;*/
+
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+
+<body onload="startTime()">
+
+<div class = "header">
+	<br>
+	<h1 style="text-align:left; margin-left: 15px;"> Medicatify
+		<span style="float:right; margin-right: 15px;" <div id="txt"> </div> </span>
+	</h1>
+</div>
+
+<!--end of header-->
+
+	<h1 id = "pageTitle">Medication Schedule (Medication View) </b></h1>
 
 <div class = "main-container">
 
@@ -99,6 +150,20 @@
 
 </div>
 
+<!--footer-->
+<div id="footer">
+  <br>
+  <div id="column">
+    <a href="TAC.html"> Terms and Conditions </a> <br>
+    <a href="#"> Help </a> <br>
+  </div>
+    <div id="column">
+      <a href="aboutUs.html"> About Sealion </a> <br>
+      <a href="contactUs.html"> Contact Us </a>
+    </div>
+
+</div>
+<!--end of footer-->
 </body>
 
 </html>
