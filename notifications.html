@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<HEAD> 
+	<title>Home</title> 
+	<link type="text/css" rel="stylesheet" href="dashBoard.css"/>
+	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+  <link type="text/css" rel="stylesheet" href="notification.css"/>
+	
+</HEAD>
+
+<!--<body style="margin:0;">-->
+<div id="wrapper">
+<!--beginning of header-->
+<!--For the clock in the header-->
+
+<!--<div class = "tempHead" style="margin-right:-40px"> 
+  <br> 
+  <body onload="startTime()">
+  <h1 style="text-align:left; margin-left: 35px;"> Medicatify 
+    <span style="float:right; margin-right: 10px;" <div id="txt"> </div> </span> 
+  </h1> 
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>-->
+
+<body onload="startTime()">
+
+<div class = "header"> 
+  <br> 
+  <h1 style="text-align:left; margin-left:15px;"> Medicatify 
+    <span style="float:right; margin-right:15px;" <div id="txt"> </div> </span> 
+  </h1> 
+</div>
+
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    //var s = today.getSeconds();
+    m = checkTime(m);
+    //s = checkTime(s);
+    if (0 <= h && h <= 11) /*12am to 11:59am*/
+    {
+      if (h == 0)
+      {
+        h = 12;
+      }
+        document.getElementById('txt').innerHTML = h + ":" + m + " am"; //+ ":" + s;
+    }
+    else { /*12pm to 11:59pm*/
+      if (h == 12)
+      {
+        h = 12;
+      }
+      else{
+        h = h - 12;
+      }
+        document.getElementById('txt').innerHTML = h + ":" + m + " pm"; //+ ":" + s;
+    }
+
+    /*document.getElementById('txt').innerHTML = h + ":" + m; //+ ":" + s;*/
+    
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+
+<!--<body onload="startTime()">
+<div class = "tempHead" style="margin-top:-40px;"> 
+	<h1 style="text-align:left;"> Medicatify 
+		<span style="float:right;" <div id="txt"> </div> </span> 
+	</h1> 
+</div>-->
+
+<!--end of header-->
+
+<br>
+<br>
+<br>
+<br><br>
+<div class="icons" style = "position:relative;float:right;">
+	<button class="notifications"><img src="./assets/envelope-icon.png" style="width:25px;height:25px;"></button> 
+	<button class="notifications"><a href="settings.html"><img src="./assets/gear-icon.png" style="width:25px;height:25px;">  </a></button>
+</div>
+
+
+
+
+<table style="position: relative; top:150px; left:50px;">  
+<tr>  
+    <th>Notification</th>
+</tr>  
+<tr>  
+    <td><img src="./assets/cake.jpg" style="width:25px;height:25px;">New Milestone: 25 days!</td>
+
+</tr>  
+<tr>  
+    <td><img src="./assets/cake.jpg" style="width:25px;height:25px;">New Milestone: 10 days!</td>
+
+</tr>  
+<tr>  
+    <td>You missed a few days, ready to get back on track?!</td>
+
+</tr>  
+<tr>  
+    <td>You're doing great!</td>
+
+</tr> 
+<tr>  
+    <td>You missed a few days, ready to get back on track?!</td>
+
+</tr> 
+<tr>  
+    <td><img src="./assets/cake.jpg" style="width:25px;height:25px;">New Milestone: 5 days!</td>
+
+</tr> 
+<tr>  
+    <td>You missed a few days, ready to get back on track?!</td>
+
+</tr> 
+<tr>  
+    <td>We had an update! Click to see what's new</td>
+
+</tr> 
+
+</table>  
+
+<!--footer-->
+<div id="footer">
+  <br>
+  <div id="column">
+    <a href="TAC.html"> Terms and Conditions </a> <br>
+    <a href="#"> Help </a> <br>
+  </div>
+    <div id="column">
+      <a href="aboutUs.html"> About Sealion </a> <br>
+      <a href="contactUs.html"> Contact Us </a>
+    </div>
+  
+</div>
+<!--end of footer-->
+    
+</div> <!-- end of wrapper div-->
+
+</body>
+
+</html>
