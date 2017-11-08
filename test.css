@@ -6,18 +6,20 @@
 .main-container{
     display: grid;
     margin: auto;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 1fr 4fr 1fr;
 }
 
 .schedule-container{
-  grid-column-start:2;
-  display: grid;
-  width: 100%;
 
+  grid-column-start: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
 
 }
 
 .item{
+
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 20px;
@@ -25,18 +27,17 @@
   border-style: solid;
   border-width: 1px;
   border-radius: 5px;
-  /*height: 100%;*/
+
 
 
 }
 .med-container{
     display: grid;
-    grid-template-columns: 20% 30% 30% 20%;
     height:100%;
     width: 100%;
-    max-height: 50px;;
-    min-height: 50px;
-    min-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-auto-rows: minmax(100px,auto);
 
 
 }
@@ -54,13 +55,12 @@
 
     display: table-cell;
     vertical-align: middle;
+    font-size: 18px;
 }
-.med-title{
-    font-size: 20px;
-}
+
 .btn{
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     font-size: 20px;
     margin-bottom: 10px;
     white-space: normal;
@@ -75,10 +75,9 @@
 .view-container{
      grid-column-start:3;
      display: grid;
-     grid-template-columns: 50% 50%;
+     grid-template-columns: 1fr 1fr;
      margin-left: 10%;
      height: 100%;
-     width: 50%;
      border-style:solid;
      border-width:2px;
      border-radius: 5px;
