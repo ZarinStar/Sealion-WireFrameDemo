@@ -143,7 +143,6 @@ a.contactUsButton{
 /* http://www.w3schools.com/tags/ref_colorpicker.asp */
 
 h1 {
-	margin-top: 40px;
 	font-weight: lighter;
 	letter-spacing: 3px;
 	font-size: 50px;
@@ -173,10 +172,12 @@ input {
 	letter-spacing: 0.5px; 
 	font-size: 14px;
   border-radius: 5px;
+  display:inline-block;
 }
 
 p {
 	letter-spacing: 0.5px;
+  text-align: center;
 }
 
 .logo {
@@ -188,9 +189,42 @@ p {
 .center {
     margin: auto;
     width: 80%;
-    border: 1px solid #18C29C;
     padding: 10px;
+    text-align: center;
+    border: 1px solid #18C29C;
     background-color: #18C29C;
+    border-radius: 40px 0px 40px 0px; 
+}
+
+.confirm {
+  margin: auto;
+  text-align:center; 
+  width: 70%;
+  display: table;
+}
+
+.confirm_left {
+  /*float:left;*/
+  display: table-cell;
+  width: 50%;
+}
+
+.confirm_right {
+  display: table-cell;
+}
+
+.login_button {
+    background-color: #88F9D4;
+    border: 1px solid #18C29C;
+    color: #126872;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 2px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 /*For the settings*/
