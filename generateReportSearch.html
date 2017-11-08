@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<HEAD> <title> Generate report </title> 
+</HEAD>
+
+<body>
+
+<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+<link type="text/css" rel="stylesheet" href="dashBoard.css"/>
+<body id ="mainBackground">
+  
+<!--beginning of header-->
+<!--For the clock in the header-->
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    //var s = today.getSeconds();
+    m = checkTime(m);
+    //s = checkTime(s);
+    if (0 <= h && h <= 11) /*12am to 11:59am*/
+    {
+      if (h == 0)
+      {
+        h = 12;
+      }
+        document.getElementById('txt').innerHTML = h + ":" + m + " am"; //+ ":" + s;
+    }
+    else { /*12pm to 11:59pm*/
+      if (h == 12)
+      {
+        h = 12;
+      }
+      else{
+        h = h - 12;
+      }
+        document.getElementById('txt').innerHTML = h + ":" + m + " pm"; //+ ":" + s;
+    }
+
+    /*document.getElementById('txt').innerHTML = h + ":" + m; //+ ":" + s;*/
+    
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+
+<body onload="startTime()">
+
+<div class = "header"> 
+	<br> 
+	<h1 style="text-align:left; margin-left: 15px;"> Medicatify 
+		<span style="float:right; margin-right: 15px;" <div id="txt"> </div> </span> 
+	</h1> 
+</div>
+
+<!--end of header-->
+
+<br>
+<br>
+<br>
+<br>
+<div id="content">
+<h1 class ="contactUs" style="position:relative;float:left;"> Generating John Smith's Report </h1>
+<br>
+<div class="icons" style = "position:relative;float:right;">
+  <button class="notifications"><img src="./assets/envelope-icon.png" style="width:25px;height:25px;"></button> 
+  <button class="notifications"><a href="settings.html"><img src="./assets/gear-icon.png" style="width:25px;height:25px;">  </a></button> 
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--Start of main context-->
+
+<div style="float:left;">
+  <form action="#">
+  Enter a time range (after January 1st, 1980 and before November 9th, 2017): 
+  <input type="date" name="report" min="1980-01-01" max="2017-11-09">  to  <input type="date" name="report" max="2017-11-09"><br><br>
+  <input list="meds" name="medication">
+  <datalist id="browsers">
+    <option value="Med 1">
+    <option value="Med 2">
+    <option value="Med 3">
+    <option value="Med 4">
+    <option value="Med 5">
+  </datalist>
+  <input type="submit"> 
+  </form>
+</div>
+
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div style="float:left;margin-right:60px;">
+    <a href="#" class="medButton">Back</a>
+</div>
+<div style="float:right;margin-left:60px;">
+    <a href="#" class="medButton">Generate Report</a>
+</div>
+
+<!--End of main context-->
+
+
+<!--footer-->
+<div id="footer">
+	<br>
+	<div id="column">
+		<a href="#"> Terms and Conditions </a> <br>
+		<a href="#"> Help </a> <br>
+	</div>
+  	<div id="column">
+  		<a href="aboutUs.html"> About Sealion </a> <br>
+  		<a href="contactUs.html"> Contact Us </a>
+  	</div>
+	
+</div>
+<!--end of footer-->
+
+</body>
+</html>
